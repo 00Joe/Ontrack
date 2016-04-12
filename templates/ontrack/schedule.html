@@ -1,0 +1,335 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0"/>
+  <title>Starter Template - Materialize</title>
+
+  <!-- CSS  -->
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link href="css/materialize.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+  <link href="css/style.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+</head>
+<body>
+  <header>
+    <!-- Dropdown Structure -->
+    <ul id="dropdown1" class="dropdown-content">
+      <li><a href="#!">one</a></li>
+      <li><a href="#!">two</a></li>
+      <li class="divider"></li>
+      <li><a href="#!">three</a></li>
+    </ul>
+    <div class="navbar-fixed">
+        <nav class="light-blue lighten-1" role="navigation">
+          <div class="nav-wrapper container"><a id="logo-container" href="index.html" class="brand-logo">OnTrack</a>
+            <ul class="right hide-on-med-and-down">
+              <li><a href="#">Create a Schedule</a></li>
+              <li><a class="dropdown-button" href="#!" data-activates="dropdown1">Dropdown<i class="material-icons right">arrow_drop_down</i></a></li>
+            </ul>
+
+            <ul id="nav-mobile" class="side-nav">
+              <li><a href="#">Navbar Link</a></li>
+            </ul>
+            <a href="#" data-activates="nav-mobile" class="button-collapse"><i class="material-icons">menu</i></a>
+          </div>
+        </nav>
+    </div>
+  </header>
+
+
+<main>
+<div class="container">
+    <div class="row">
+        <div class="col s12">
+          <!-- Main Page Content  -->
+          <h1 class="center-text">My Schedule</h1>
+        </div>
+    </div>
+
+    <!-- Begin Year Row -->
+    <div class="row">
+
+        <!--Begin Cards Container-->
+        <div class="col m12 l4 cards-container">
+
+          <!-- Begin Semester Card -->
+          <div class="cardpad">
+              <div class="card hoverable z-depth-1 semester" id="fall2016" onclick='highlightSemester("fall2016")'>
+                <div class="card-content black-text">
+                  <span class="card-title">Fall 2016</span>
+
+                  <ul class="collapsible z-depth-0" data-collapsible="accordion" id="fall2016courselist">
+                    <li>
+                      <!--Course label -->
+                      <div class="collapsible-header">
+                          <div style="display: inline-block;">
+                              <span style="background:#0e8e44; color:white">CSCE</span>
+                              144
+                              <span class="right">F S</span>
+                          </div>
+                      </div>
+                      <div class="collapsible-body">
+                        <h5 class="center-text">Introduction to Computer Science</h5>
+                        <p>An introduction to computer science including problem solving, algorithm design, object-oriented programming, numerical and non-numerical applications, and use of data files. Ethical and social impacts of computing. Prerequisite: four years of high school mathematics or MATH 140 or equivalent.</p>
+
+                        <div class="center-btn">
+                          <a class="waves-effect waves-light btn red" onclick='alert("hi")'>Remove</a>
+                        </div>
+
+                      </div>
+                    </li>
+                    <li>
+                      <div class="collapsible-header"><i class="material-icons">place</i>Second</div>
+                      <div class="collapsible-body"><p>Lorem ipsum dolor sit amet.</p></div>
+                    </li>
+                  </ul>
+                </div> <!-- End Card content-->
+                <div class="card-action">
+                  <div class="right-text">
+                    <p>Total Credits: 17</p>
+                  </div>
+                </div> <!--End Card Action (Bottom stuff)-->
+              </div> <!--End Semester Card-->
+            </div> <!--End Card Pad-->
+          </div> <!--End Cards Container-->
+
+      <!--Begin Cards Container-->
+      <div class="col m12 l4 cards-container">
+      <!-- Begin Semester Card -->
+      <div class="cardpad">
+      <div class="card hoverable z-depth-1 semester" id="jterm2017" onclick='highlightSemester("jterm2017")'>
+        <div class="card-content black-text">
+          <span class="card-title">J-Term 2017</span>
+
+          <ul class="collapsible z-depth-0" data-collapsible="accordion" id="jterm2017courselist">
+            <li>
+              <div class="collapsible-header"><i class="material-icons">subtitles</i>CSCE 144<span class="right">Fall/Spring</span></div>
+              <div class="collapsible-body">
+                <h5 class="center-text">Introduction to Computer Science</h5>
+                <p>An introduction to computer science including problem solving, algorithm design, object-oriented programming, numerical and non-numerical applications, and use of data files. Ethical and social impacts of computing. Prerequisite: four years of high school mathematics or MATH 140 or equivalent.</p>
+
+                <div class="center-btn">
+                  <a class="waves-effect waves-light btn red" onclick='alert("hi")'>Remove</a>
+                </div>
+
+              </div>
+            </li>
+            <li>
+              <div class="collapsible-header"><i class="material-icons">place</i>Second</div>
+              <div class="collapsible-body"><p>Lorem ipsum dolor sit amet.</p></div>
+            </li>
+          </ul>
+        </div> <!-- End Card content-->
+        <div class="card-action">
+          <div class="right-text">
+            <p>Total Credits: 17</p>
+          </div>
+        </div> <!--End Card Action (Bottom stuff)-->
+      </div> <!--End Semester Card-->
+      </div> <!--End Card Pad-->
+      </div> <!--End Cards Container-->
+
+      <!--Begin Cards Container-->
+      <div class="col m12 l4 cards-container">
+      <!-- Begin Semester Card -->
+      <div class="cardpad">
+      <div class="card hoverable z-depth-1 semester" id="spring2017" onclick='highlightSemester("spring2017")'>
+        <div class="card-content black-text">
+          <span class="card-title">Spring 2017</span>
+
+          <ul class="collapsible z-depth-0" data-collapsible="accordion" id="spring2017courselist">
+            <li>
+              <div class="collapsible-header"><i class="material-icons">subtitles</i>CSCE 144<span class="right">Fall/Spring</span></div>
+              <div class="collapsible-body">
+                <h5 class="center-text">Introduction to Computer Science</h5>
+                <p>An introduction to computer science including problem solving, algorithm design, object-oriented programming, numerical and non-numerical applications, and use of data files. Ethical and social impacts of computing. Prerequisite: four years of high school mathematics or MATH 140 or equivalent.</p>
+
+                <div class="center-btn">
+                  <a class="waves-effect waves-light btn red" onclick='alert("hi")'>Remove</a>
+                </div>
+
+              </div>
+            </li>
+            <li>
+              <div class="collapsible-header"><i class="material-icons">place</i>Second</div>
+              <div class="collapsible-body"><p>Lorem ipsum dolor sit amet.</p></div>
+            </li>
+          </ul>
+        </div> <!-- End Card content-->
+        <div class="card-action">
+          <div class="right-text">
+            <p>Total Credits: 17</p>
+          </div>
+        </div> <!--End Card Action (Bottom stuff)-->
+      </div> <!--End Semester Card-->
+      </div> <!--End Card Pad-->
+      </div> <!--End Cards Container-->
+
+    </div> <!--End Row-->
+
+
+    <!-- Begin Year Row -->
+    <div class="row">
+
+        <!--Begin Cards Container-->
+        <div class="col m12 l4 cards-container">
+
+          <!-- Begin Semester Card -->
+          <div class="cardpad">
+              <div class="card hoverable z-depth-1 semester" id="fall2016" onclick='highlightSemester("fall2016")'>
+                <div class="card-content black-text">
+                  <span class="card-title">Fall 2016</span>
+
+                  <ul class="collapsible z-depth-0" data-collapsible="accordion" id="fall2016courselist">
+                    <li>
+                      <div class="collapsible-header"><i class="material-icons">subtitles</i>CSCE 144<span class="right">Fall/Spring</span></div>
+                      <div class="collapsible-body">
+                        <h5 class="center-text">Introduction to Computer Science</h5>
+                        <p>An introduction to computer science including problem solving, algorithm design, object-oriented programming, numerical and non-numerical applications, and use of data files. Ethical and social impacts of computing. Prerequisite: four years of high school mathematics or MATH 140 or equivalent.</p>
+
+                        <div class="center-btn">
+                          <a class="waves-effect waves-light btn red" onclick='alert("hi")'>Remove</a>
+                        </div>
+
+                      </div>
+                    </li>
+                    <li>
+                      <div class="collapsible-header"><i class="material-icons">place</i>Second</div>
+                      <div class="collapsible-body"><p>Lorem ipsum dolor sit amet.</p></div>
+                    </li>
+                  </ul>
+                </div> <!-- End Card content-->
+                <div class="card-action">
+                  <div class="right-text">
+                    <p>Total Credits: 17</p>
+                  </div>
+                </div> <!--End Card Action (Bottom stuff)-->
+              </div> <!--End Semester Card-->
+            </div> <!--End Card Pad-->
+          </div> <!--End Cards Container-->
+
+      <!--Begin Cards Container-->
+      <div class="col m12 l4 cards-container">
+      <!-- Begin Semester Card -->
+      <div class="cardpad">
+      <div class="card hoverable z-depth-1 semester" id="jterm2017" onclick='highlightSemester("jterm2017")'>
+        <div class="card-content black-text">
+          <span class="card-title">J-Term 2017</span>
+
+          <ul class="collapsible z-depth-0" data-collapsible="accordion" id="jterm2017courselist">
+            <li>
+              <div class="collapsible-header"><i class="material-icons">subtitles</i>CSCE 144<span class="right">Fall/Spring</span></div>
+              <div class="collapsible-body">
+                <h5 class="center-text">Introduction to Computer Science</h5>
+                <p>An introduction to computer science including problem solving, algorithm design, object-oriented programming, numerical and non-numerical applications, and use of data files. Ethical and social impacts of computing. Prerequisite: four years of high school mathematics or MATH 140 or equivalent.</p>
+
+                <div class="center-btn">
+                  <a class="waves-effect waves-light btn red" onclick='alert("hi")'>Remove</a>
+                </div>
+
+              </div>
+            </li>
+            <li>
+              <div class="collapsible-header"><i class="material-icons">place</i>Second</div>
+              <div class="collapsible-body"><p>Lorem ipsum dolor sit amet.</p></div>
+            </li>
+          </ul>
+        </div> <!-- End Card content-->
+        <div class="card-action">
+          <div class="right-text">
+            <p>Total Credits: 17</p>
+          </div>
+        </div> <!--End Card Action (Bottom stuff)-->
+      </div> <!--End Semester Card-->
+      </div> <!--End Card Pad-->
+      </div> <!--End Cards Container-->
+
+      <!--Begin Cards Container-->
+      <div class="col m12 l4 cards-container">
+      <!-- Begin Semester Card -->
+      <div class="cardpad">
+      <div class="card hoverable z-depth-1 semester" id="spring2017" onclick='highlightSemester("spring2017")'>
+        <div class="card-content black-text">
+          <span class="card-title">Spring 2017</span>
+
+          <ul class="collapsible z-depth-0" data-collapsible="accordion" id="spring2017courselist">
+            <li>
+              <div class="collapsible-header"><i class="material-icons">subtitles</i>CSCE 144<span class="right">Fall/Spring</span></div>
+              <div class="collapsible-body">
+                <h5 class="center-text">Introduction to Computer Science</h5>
+                <p>An introduction to computer science including problem solving, algorithm design, object-oriented programming, numerical and non-numerical applications, and use of data files. Ethical and social impacts of computing. Prerequisite: four years of high school mathematics or MATH 140 or equivalent.</p>
+
+                <div class="center-btn">
+                  <a class="waves-effect waves-light btn red" onclick='alert("hi")'>Remove</a>
+                </div>
+
+              </div>
+            </li>
+            <li>
+              <div class="collapsible-header"><i class="material-icons">place</i>Second</div>
+              <div class="collapsible-body"><p>Lorem ipsum dolor sit amet.</p></div>
+            </li>
+          </ul>
+        </div> <!-- End Card content-->
+        <div class="card-action">
+          <div class="right-text">
+            <p>Total Credits: 17</p>
+          </div>
+        </div> <!--End Card Action (Bottom stuff)-->
+      </div> <!--End Semester Card-->
+      </div> <!--End Card Pad-->
+      </div> <!--End Cards Container-->
+
+    </div> <!--End Row-->
+
+
+
+
+  </div> <!--End Container-->
+</main>
+
+  <footer class="page-footer light-blue">
+    <div class="container">
+      <div class="row">
+        <div class="col l6 s12">
+          <h5 class="white-text">About Us</h5>
+          <p class="grey-text text-lighten-4">We are a team of college students working on this project like it's our full time job. Send us tem flakes so we Can hav vry gud colleg an much grade yeee.</p>
+
+
+        </div>
+        <div class="col l3 s12">
+          <h5 class="white-text">Team Members</h5>
+          <ul>
+            <li><a class="white-text" href="#!">Matt Dennie</a></li>
+            <li><a class="white-text" href="#!">Joseph Bowley</a></li>
+            <li><a class="white-text" href="#!">Jeoff Villanueva</a></li>
+            <li><a class="white-text" href="#!">Jordan Gahan</a></li>
+            <li><a class="white-text" href="#!">Philip Passantino</a></li>
+          </ul>
+        </div>
+        <div class="col l3 s12">
+          <h5 class="white-text">Useful Links</h5>
+          <ul>
+            <li><a class="white-text" href="http://www.plu.edu/catalog-2015-2016/undergraduate-program/program-curriculum-information/computer-science-computer-engineering/">PLU CS Course Catalog</a></li>
+            <li><a class="white-text" href="https://banweb.plu.edu/pls/pap/hxskschd.P_PLUSchedule">Banner Schedule</a></li>
+            <li><a class="white-text" href="http://www.plu.edu/registrar/academic-dates-deadlines/">Acedemic Calendar</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="footer-copyright">
+      <div class="container">
+      Made by the Dream Team
+      </div>
+    </div>
+  </footer>
+
+
+  <!--  Scripts-->
+  <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+  <script src="js/materialize.js"></script>
+  <script src="js/init.js"></script>
+  <script src="js/scripts.js"></script>
+
+  </body>
+</html>
